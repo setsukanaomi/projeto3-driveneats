@@ -1,1 +1,23 @@
- 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #cf2b2b;
+  padding-left: 20px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+  font-size: 44px;
+  color: white;
+}
+
+h2 {
+  font-size: 18px;
+  color: white;
+}
