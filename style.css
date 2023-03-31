@@ -1,11 +1,14 @@
 body {
   font-family: "Roboto", sans-serif;
+  background-color: black;
 }
 
 .header {
   background-color: #cf2b2b;
   padding-left: 20px;
   height: 92px;
+  width: 415px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
