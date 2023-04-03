@@ -19,27 +19,90 @@
       <h1>DrivenEats</h1>
       <h2>Sua comida em 6 minutos</h2>
     </div>
-    <div class="container">
-      <h3>Primeiro, o prato</h3>
+    <div class="content">
       <div class="foods">
-        <div class="item chicken">
-          <img src="./assets/frango_yin_yang.png">
-          <p class="item-name">Frango Yin Yang</p>
-          <p class="item-description">Um pouco de batata, um pouco de salada</p>
-          <p class="item-price">R$ 25,90</p>
+        <h3>Primeiro, o prato</h3>
+        <div class="items-row">
+          <div class="item chicken" data-test="dish">
+            <img src="./assets/frango_yin_yang.png" />
+            <p class="item-name" data-test="item-name">Frango Yin Yang</p>
+            <p class="item-description">
+              Um pouco de batata, um pouco de salada
+            </p>
+            <p class="item-price" data-test="item-price">R$ 25,90</p>
+          </div>
+          <div class="item chicken" data-test="dish">
+            <img src="./assets/frango_yin_yang.png" />
+            <p class="item-name" data-test="item-name">Frango Yin Yang</p>
+            <p class="item-description">
+              Um pouco de batata, um pouco de salada
+            </p>
+            <p class="item-price" data-test="item-price">R$ 25,90</p>
+          </div>
+          <div class="item chicken" data-test="dish">
+            <img src="./assets/frango_yin_yang.png" />
+            <p class="item-name" data-test="item-name">Frango Yin Yang</p>
+            <p class="item-description">
+              Um pouco de batata, um pouco de salada
+            </p>
+            <p class="item-price" data-test="item-price">R$ 25,90</p>
+          </div>
         </div>
-        <div class="item chicken">
-          <img src="./assets/frango_yin_yang.png">
-          <p class="item-name">Frango Yin Yang</p>
-          <p class="item-description">Um pouco de batata, um pouco de salada</p>
-          <p class="item-price">R$ 25,90</p>
+        <div class="drinks">
+          <h3>Agora, a sua bebida</h3>
+          <div class="items-row">
+            <div class="item coca" data-test="drink">
+              <img src="./assets/coca-cola.png" />
+              <p class="item-name" data-test="item-name">Coquinha gelada</p>
+              <p class="item-description">Lata 350ml</p>
+              <p class="item-price" data-test="item-price">R$ 4,90</p>
+            </div>
+            <div class="item coca" data-test="drink">
+              <img src="./assets/coca-cola.png" />
+              <p class="item-name" data-test="item-name">Coquinha gelada</p>
+              <p class="item-description">Lata 350ml</p>
+              <p class="item-price" data-test="item-price">R$ 4,90</p>
+            </div>
+            <div class="item coca" data-test="drink">
+              <img src="./assets/coca-cola.png" />
+              <p class="item-name" data-test="item-name">Coquinha gelada</p>
+              <p class="item-description">Lata 350ml</p>
+              <p class="item-price" data-test="item-price">R$ 4,90</p>
+            </div>
+          </div>
         </div>
-        <div class="item chicken">
-          <img src="./assets/frango_yin_yang.png">
-          <p class="item-name">Frango Yin Yang</p>
-          <p class="item-description">Um pouco de batata, um pouco de salada</p>
-          <p class="item-price">R$ 25,90</p>
+        <div class="desserts">
+          <h3>Por fim, sua sobremesa</h3>
+          <div class="items-row">
+            <div class="item pudim" data-test="dessert">
+              <img src="./assets/pudim.png" />
+              <p class="item-name" data-test="item-name">Pudim</p>
+              <p class="item-description">Apenas pudim</p>
+              <p class="item-price" data-test="item-price">R$ 7,90</p>
+            </div>
+            <div class="item pudim" data-test="dessert">
+              <img src="./assets/pudim.png" />
+              <p class="item-name" data-test="item-name">Pudim</p>
+              <p class="item-description">Apenas pudim</p>
+              <p class="item-price" data-test="item-price">R$ 7,90</p>
+            </div>
+            <div class="item pudim" data-test="dessert">
+              <img src="./assets/pudim.png" />
+              <p class="item-name" data-test="item-name">Pudim</p>
+              <p class="item-description">Apenas pudim</p>
+              <p class="item-price" data-test="item-price">R$ 7,90</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="bottom-bar">
+        <button disabled class="select" data-test="order-btn">
+          <p>Selecione os 3 itens</p>
+          <p>para fechar o pedido</p>
+        </button>
+        <button class="selected hidden" data-test="order-btn">
+          <p>Fechar pedido</p>
+        </button>
       </div>
     </div>
   </body>
