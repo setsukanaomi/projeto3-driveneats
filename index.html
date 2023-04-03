@@ -20,47 +20,48 @@
       <h1>DrivenEats</h1>
       <h2>Sua comida em 6 minutos</h2>
     </div>
+    <div class="spacer-top"></div>
     <div class="content">
       <div class="foods">
-        <h3>Primeiro, o prato</h3>
+        <h3>Primeiro, seu prato</h3>
         <div class="items-row">
           <div
-            onclick="itemSelect('.foods', '.chicken')"
-            class="item chicken"
+            onclick="itemSelect('.foods', '.uramaki')"
+            class="item uramaki"
             data-test="dish"
           >
-            <img src="./assets/frango_yin_yang.png" />
-            <p class="item-name" data-test="item-name">Frango Yin Yang</p>
+            <img src="./assets/uramaki.png" />
+            <p class="item-name" data-test="item-name">Uramaki Skin</p>
             <p class="item-description">
-              Um pouco de batata, um pouco de salada
+              Uramaki de skin com creamcheese, 10uni
             </p>
-            <p class="item-price" data-test="item-price">R$ 25,90</p>
+            <p class="item-price" data-test="item-price">R$ 20,00</p>
             <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
           </div>
           <div
-            onclick="itemSelect('.foods', '.chicken2')"
-            class="item chicken2"
+            onclick="itemSelect('.foods', '.sashimi')"
+            class="item hossomaki"
             data-test="dish"
           >
-            <img src="./assets/frango_yin_yang.png" />
-            <p class="item-name" data-test="item-name">Frango Yin Yang</p>
+            <img src="./assets/sashimi.png" />
+            <p class="item-name" data-test="item-name">Sashimi de Salmão</p>
             <p class="item-description">
-              Um pouco de batata, um pouco de salada
+              Sashimi delicioso de salmão, 10uni
             </p>
-            <p class="item-price" data-test="item-price">R$ 25,90</p>
+            <p class="item-price" data-test="item-price">R$ 16,90</p>
             <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
           </div>
           <div
-            onclick="itemSelect('.foods', '.chicken3')"
-            class="item chicken3"
+            onclick="itemSelect('.foods', '.temaki')"
+            class="item temaki"
             data-test="dish"
           >
-            <img src="./assets/frango_yin_yang.png" />
-            <p class="item-name" data-test="item-name">Frango Yin Yang</p>
+            <img src="./assets/temaki.png" />
+            <p class="item-name" data-test="item-name">Temaki Grelhado</p>
             <p class="item-description">
-              Um pouco de batata, um pouco de salada
+              Temaki de salmão grelhado, 1uni
             </p>
-            <p class="item-price" data-test="item-price">R$ 25,90</p>
+            <p class="item-price" data-test="item-price">R$ 18,90</p>
             <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
           </div>
         </div>
@@ -68,35 +69,35 @@
           <h3>Agora, a sua bebida</h3>
           <div class="items-row">
             <div
-              onclick="itemSelect('.drinks', '.coca')"
-              class="item coca"
+              onclick="itemSelect('.drinks', '.schweppes')"
+              class="item schweppes"
               data-test="drink"
             >
-              <img src="./assets/coca-cola.png" />
-              <p class="item-name" data-test="item-name">Coquinha gelada</p>
-              <p class="item-description">Lata 350ml</p>
-              <p class="item-price" data-test="item-price">R$ 4,90</p>
+              <img src="./assets/schweppes.jpg" />
+              <p class="item-name" data-test="item-name">Schweppes Citrus</p>
+              <p class="item-description">Refrigerante cítrico 350ml;</p>
+              <p class="item-price" data-test="item-price">R$ 7,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
             <div
-              onclick="itemSelect('.drinks', '.coca2')"
-              class="item coca2"
+              onclick="itemSelect('.drinks', '.soju')"
+              class="item soju"
               data-test="drink"
             >
-              <img src="./assets/coca-cola.png" />
-              <p class="item-name" data-test="item-name">Coquinha gelada</p>
-              <p class="item-description">Lata 350ml</p>
-              <p class="item-price" data-test="item-price">R$ 4,90</p>
+              <img src="./assets/soju.jpg" />
+              <p class="item-name" data-test="item-name">Soju de Pêssego </p>
+              <p class="item-description">Soju de pêssego, teor alcóolico: 12%;</p>
+              <p class="item-price" data-test="item-price">R$ 13,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
             <div
-              onclick="itemSelect('.drinks', '.coca3')"
-              class="item coca3"
+              onclick="itemSelect('.drinks', '.cocacoffee')"
+              class="item cocacoffee"
               data-test="drink"
             >
-              <img src="./assets/coca-cola.png" />
-              <p class="item-name" data-test="item-name">Coquinha gelada</p>
-              <p class="item-description">Lata 350ml</p>
+              <img src="./assets/coffeecoca.jpg" />
+              <p class="item-name" data-test="item-name">Coquinha de Café</p>
+              <p class="item-description">Refrigerante de cola com café 350ml;</p>
               <p class="item-price" data-test="item-price">R$ 4,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
@@ -111,8 +112,8 @@
               data-test="dessert"
             >
               <img src="./assets/pudim.png" />
-              <p class="item-name" data-test="item-name">Pudim</p>
-              <p class="item-description">Apenas pudim</p>
+              <p class="item-name" data-test="item-name">Pudim de Leite</p>
+              <p class="item-description">Apenas um delicioso pudim saboroso;</p>
               <p class="item-price" data-test="item-price">R$ 7,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
@@ -121,10 +122,10 @@
               class="item pudim2"
               data-test="dessert"
             >
-              <img src="./assets/pudim.png" />
-              <p class="item-name" data-test="item-name">Pudim</p>
-              <p class="item-description">Apenas pudim</p>
-              <p class="item-price" data-test="item-price">R$ 7,90</p>
+              <img src="./assets/brownie.png" />
+              <p class="item-name" data-test="item-name">Brownie de Café</p>
+              <p class="item-description">Brownie delicioso de chocafé, 1uni;</p>
+              <p class="item-price" data-test="item-price">R$ 9,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
             <div
@@ -132,15 +133,16 @@
               class="item pudim3"
               data-test="dessert"
             >
-              <img src="./assets/pudim.png" />
-              <p class="item-name" data-test="item-name">Pudim</p>
-              <p class="item-description">Apenas pudim</p>
-              <p class="item-price" data-test="item-price">R$ 7,90</p>
+              <img src="./assets/sorvete.png" />
+              <p class="item-name" data-test="item-name">Sorvete de Vanilla</p>
+              <p class="item-description">Pote de sorvete de baunilha saboroso </p>
+              <p class="item-price" data-test="item-price">R$ 18,00</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
           </div>
         </div>
       </div>
+      <div class="spacer-bottom"></div>
       <div class="bottom-bar">
         <button disabled class="select" data-test="order-btn">
           <p>Selecione os 3 itens</p>
