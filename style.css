@@ -120,6 +120,15 @@ img {
   line-height: 23px;
 }
 
+.check {
+  color: #32B72F;
+  font-size: 20px;
+
+  position: absolute;
+  bottom: 10px;
+  right: 6px;
+}
+
 .selected {
   background-color: #32b72f;
 
@@ -145,6 +154,10 @@ img {
 .selected-item {
   border: 6px solid #32B72F;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+:hover.selected {
+  cursor: pointer;
 }
 
 .hidden {

@@ -4,6 +4,7 @@ let nameDrink = '';
 let valueDrink = '';
 let nameDessert = '';
 let valueDessert = '';
+let valueTotal = 0.0;
 
 function itemSelect (parentClass, itemClass) {
   // Verify if already has a selected card
@@ -40,12 +41,41 @@ function checkActive (food, drink, dessert) {
       const selectedButton = document.querySelector(".selected");
       selectedButton.classList.remove("hidden");
 
-      nameFood = checkFood.querySelector('.name').innerHTML;
-      valueFood = checkFood.querySelector('.value').innerHTML;
-      nameDrink = checkDrink.querySelector('.name').innerHTML;
-      valueDrink = checkDrink.querySelector('.value').innerHTML;
-      nameDessert = checkDessert.querySelector('.name').innerHTML;
-      valueDessert = checkDessert.querySelector('.value').innerHTML;
+      nameFood = checkFood.querySelector('.item-name').innerHTML;
+      valueFood = checkFood.querySelector('.item-price').innerHTML;
+      nameDrink = checkDrink.querySelector('.item-name').innerHTML;
+      valueDrink = checkDrink.querySelector('.item-price').innerHTML;
+      nameDessert = checkDessert.querySelector('.item-name').innerHTML;
+      valueDessert = checkDessert.querySelector('.item-price').innerHTML;
   }    
 }
 
+function parseValues() {
+  const parsedFoodValue = Number(valueFood.substring(2, valueFood.length - 1).replace(",", "."));
+  const parsedDrinkValue = Number(valueDrink.substring(2, valueDrink.length - 1).replace(",", "."));
+  const parsedDessertValue = Number(valueDessert.substring(2, valueDessert.length - 1).replace(",", "."));
+
+  return (parsedFoodValue + parsedDrinkValue + parsedDessertValue).toFixed(2).replace(".", ",");
+}
+
+function sendMessage() {
+
+  valueTotal = parseValues();
+
+  const cellphoneNumber = 5511982568093;
+
+  const textMessage = 'Olá, gostaria de fazer o pedido:';
+  
+  const foodMessage = '- Prato: ' + nameFood;
+  const drinkMessage = '- Bebida: ' + nameDrink;
+  const dessertMessage = '- Sobremesa: ' + nameDessert;
+  const totalOrder = 'Total: R$ ' + valueTotal;
+
+  let fullMessage = textMessage + '\n' + foodMessage + '\n' + drinkMessage + '\n' + dessertMessage + '\n' + totalOrder + '\n\n';
+  
+  const wppMessage = 'https://wa.me/' + cellphoneNumber + '?text=' + encodeURIComponent(fullMessage) ;
+
+  console.log(wppMessage);
+
+  window.open(wppMessage);
+}
