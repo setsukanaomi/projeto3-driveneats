@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +24,11 @@
       <div class="foods">
         <h3>Primeiro, o prato</h3>
         <div class="items-row">
-          <div onclick="itemSelect('.foods', '.chicken')" class="item chicken" data-test="dish">
+          <div
+            onclick="itemSelect('.foods', '.chicken')"
+            class="item chicken"
+            data-test="dish"
+          >
             <img src="./assets/frango_yin_yang.png" />
             <p class="item-name" data-test="item-name">Frango Yin Yang</p>
             <p class="item-description">
@@ -33,7 +37,11 @@
             <p class="item-price" data-test="item-price">R$ 25,90</p>
             <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
           </div>
-          <div onclick="itemSelect('.foods', '.chicken2')" class="item chicken2" data-test="dish">
+          <div
+            onclick="itemSelect('.foods', '.chicken2')"
+            class="item chicken2"
+            data-test="dish"
+          >
             <img src="./assets/frango_yin_yang.png" />
             <p class="item-name" data-test="item-name">Frango Yin Yang</p>
             <p class="item-description">
@@ -42,7 +50,11 @@
             <p class="item-price" data-test="item-price">R$ 25,90</p>
             <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
           </div>
-          <div onclick="itemSelect('.foods', '.chicken3')" class="item chicken3" data-test="dish">
+          <div
+            onclick="itemSelect('.foods', '.chicken3')"
+            class="item chicken3"
+            data-test="dish"
+          >
             <img src="./assets/frango_yin_yang.png" />
             <p class="item-name" data-test="item-name">Frango Yin Yang</p>
             <p class="item-description">
@@ -55,21 +67,33 @@
         <div class="drinks">
           <h3>Agora, a sua bebida</h3>
           <div class="items-row">
-            <div onclick="itemSelect('.drinks', '.coca')" class="item coca" data-test="drink">
+            <div
+              onclick="itemSelect('.drinks', '.coca')"
+              class="item coca"
+              data-test="drink"
+            >
               <img src="./assets/coca-cola.png" />
               <p class="item-name" data-test="item-name">Coquinha gelada</p>
               <p class="item-description">Lata 350ml</p>
               <p class="item-price" data-test="item-price">R$ 4,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="itemSelect('.drinks', '.coca2')" class="item coca2" data-test="drink">
+            <div
+              onclick="itemSelect('.drinks', '.coca2')"
+              class="item coca2"
+              data-test="drink"
+            >
               <img src="./assets/coca-cola.png" />
               <p class="item-name" data-test="item-name">Coquinha gelada</p>
               <p class="item-description">Lata 350ml</p>
               <p class="item-price" data-test="item-price">R$ 4,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="itemSelect('.drinks', '.coca3')" class="item coca3" data-test="drink">
+            <div
+              onclick="itemSelect('.drinks', '.coca3')"
+              class="item coca3"
+              data-test="drink"
+            >
               <img src="./assets/coca-cola.png" />
               <p class="item-name" data-test="item-name">Coquinha gelada</p>
               <p class="item-description">Lata 350ml</p>
@@ -81,21 +105,33 @@
         <div class="desserts">
           <h3>Por fim, sua sobremesa</h3>
           <div class="items-row">
-            <div onclick="itemSelect('.desserts', '.pudim')" class="item pudim" data-test="dessert">
+            <div
+              onclick="itemSelect('.desserts', '.pudim')"
+              class="item pudim"
+              data-test="dessert"
+            >
               <img src="./assets/pudim.png" />
               <p class="item-name" data-test="item-name">Pudim</p>
               <p class="item-description">Apenas pudim</p>
               <p class="item-price" data-test="item-price">R$ 7,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="itemSelect('.desserts', '.pudim2')" class="item pudim2" data-test="dessert">
+            <div
+              onclick="itemSelect('.desserts', '.pudim2')"
+              class="item pudim2"
+              data-test="dessert"
+            >
               <img src="./assets/pudim.png" />
               <p class="item-name" data-test="item-name">Pudim</p>
               <p class="item-description">Apenas pudim</p>
               <p class="item-price" data-test="item-price">R$ 7,90</p>
               <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="itemSelect('.desserts', '.pudim3')" class="item pudim3" data-test="dessert">
+            <div
+              onclick="itemSelect('.desserts', '.pudim3')"
+              class="item pudim3"
+              data-test="dessert"
+            >
               <img src="./assets/pudim.png" />
               <p class="item-name" data-test="item-name">Pudim</p>
               <p class="item-description">Apenas pudim</p>
@@ -110,7 +146,11 @@
           <p>Selecione os 3 itens</p>
           <p>para fechar o pedido</p>
         </button>
-        <button onclick="sendMessage();" class="selected hidden" data-test="order-btn">
+        <button
+          onclick="sendMessage();"
+          class="selected hidden"
+          data-test="order-btn"
+        >
           <p>Fechar pedido</p>
         </button>
       </div>
