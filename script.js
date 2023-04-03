@@ -31,6 +31,23 @@ function itemSelect(parentClass, itemClass) {
   checkActive(".foods", ".drinks", ".desserts");
 }
 
+
+function parseValues() {
+  const parsedFoodValue = Number(
+    valueFood.substring(2, valueFood.length - 1).replace(",", ".")
+  );
+  const parsedDrinkValue = Number(
+    valueDrink.substring(2, valueDrink.length - 1).replace(",", ".")
+  );
+  const parsedDessertValue = Number(
+    valueDessert.substring(2, valueDessert.length - 1).replace(",", ".")
+  );
+
+  return (parsedFoodValue + parsedDrinkValue + parsedDessertValue)
+    .toFixed(2)
+    .replace(".", ",");
+}
+
 function checkActive(food, drink, dessert) {
   const checkFood = document.querySelector(food + " .selected-item");
   const checkDrink = document.querySelector(drink + " .selected-item");
@@ -50,22 +67,6 @@ function checkActive(food, drink, dessert) {
     nameDessert = checkDessert.querySelector(".item-name").innerHTML;
     valueDessert = checkDessert.querySelector(".item-price").innerHTML;
   }
-}
-
-function parseValues() {
-  const parsedFoodValue = Number(
-    valueFood.substring(2, valueFood.length - 1).replace(",", ".")
-  );
-  const parsedDrinkValue = Number(
-    valueDrink.substring(2, valueDrink.length - 1).replace(",", ".")
-  );
-  const parsedDessertValue = Number(
-    valueDessert.substring(2, valueDessert.length - 1).replace(",", ".")
-  );
-
-  return (parsedFoodValue + parsedDrinkValue + parsedDessertValue)
-    .toFixed(2)
-    .replace(".", ",");
 }
 
 function sendMessage() {
